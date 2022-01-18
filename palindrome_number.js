@@ -1,11 +1,24 @@
-var isPalindrome = function(x) {
-    const number = String(x);
-    const reversedNumber = number.split("").reverse().join("");
+var reverseString = (str) => {
+    let reversedString = '';
+    const idxDelimiter = str.length - 1;
+    
+    for (let i = idxDelimiter; i >= 0; i--) {
+        reversedString += str[i];
+    }
+    
+    return reversedString;
+}
 
-    if (number === reversedNumber) {
+var isPalindrome = function(x) {
+    const str = String(x);
+    
+    if (reverseString(str) === str) {
         return true
     } else {
         return false
     }
 }
+
+
+
 
