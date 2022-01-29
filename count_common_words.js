@@ -26,17 +26,3 @@ var countWords = function(words1, words2) {
 
     return count;
 }
-
-
-const words1 = ["leetcode", "is", "amazing", "as", "is"];
-const words2 = ["amazing", "leetcode", "is"];
-
-const words3 = ["b", "bb", "bbb"];
-const words4 = ["a", "aa", "aaa"];
-
-const words5 = ["a", "ab"];
-const words6 = ["a", "a", "a", "ab"];
-
-countWords(words1, words2);
-countWords(words3, words4);
-countWords(words5, words6);
